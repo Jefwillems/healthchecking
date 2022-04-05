@@ -9,6 +9,10 @@
         <Description>This library provides a method to wrap around your function calls. If the function call throws an error, the healthcheck will fail, until the method ran successfully</Description>
         <NeutralLanguage>en-150</NeutralLanguage>
         <LangVersion>10</LangVersion>
+        <PackageProjectUrl>https://github.com/Jefwillems/healthchecking</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/Jefwillems/healthchecking/blob/main/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/Jefwillems/healthchecking</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
     </PropertyGroup>
 
     <ItemGroup>
