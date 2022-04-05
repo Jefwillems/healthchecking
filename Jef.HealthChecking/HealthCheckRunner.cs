@@ -23,6 +23,7 @@ internal class HealthCheckRunner : IHealthCheckRunner
         try
         {
             var result = action();
+            _logger.LogDebug("healthcheck for {Dependency} succeeded", dependency);
             _healthContainer.SetHealthStatus(dependency, HealthStatus.OK);
             return result;
         }
