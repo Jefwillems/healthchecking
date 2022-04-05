@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthChecking.Api", "HealthChecking.Api\HealthChecking.Api.csproj", "{C5C0C47A-2AA4-4F3A-B972-85EDED832EC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jef.HealthChecking", "Jef.HealthChecking\Jef.HealthChecking.csproj", "{1B8C9BDF-193B-4939-A889-FA6F0F3943C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5C0C47A-2AA4-4F3A-B972-85EDED832EC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5C0C47A-2AA4-4F3A-B972-85EDED832EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5C0C47A-2AA4-4F3A-B972-85EDED832EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5C0C47A-2AA4-4F3A-B972-85EDED832EC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B8C9BDF-193B-4939-A889-FA6F0F3943C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B8C9BDF-193B-4939-A889-FA6F0F3943C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B8C9BDF-193B-4939-A889-FA6F0F3943C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B8C9BDF-193B-4939-A889-FA6F0F3943C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
