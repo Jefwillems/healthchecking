@@ -21,4 +21,10 @@ internal class HealthContainer : IHealthContainer
     {
         return _dependencyStatus;
     }
+
+    public DependencyStatus? GetStatusFor(string name)
+    {
+        var x = _dependencyStatus.TryGetValue(name, out var ret);
+        return x ? ret : null;
+    }
 }

@@ -49,13 +49,27 @@ public class HealthController : ControllerBase
         }
 
 
-        messages.Insert(0, currentLevel switch
+        messages.Insert(0, GetHealthString(currentLevel));
+
+        return Ok(messages);
+    }
+
+    [HttpGet("aggregate/{name}")]
+    public IActionResult GetDependencyStatus(string name)
+    {
+        var status = _healthContainer.GetStatusFor(name);
+
+        return Ok(GetHealthString(status?.Level ?? HealthStatus.OK));
+    }
+
+    private string GetHealthString(HealthStatus status)
+    {
+        return status switch
         {
             HealthStatus.OK => "OK",
             HealthStatus.WARN => "WARN",
-            _ => "CRIT"
-        });
-
-        return Ok(messages);
+            HealthStatus.CRIT => "CRIT",
+            _ => throw new ArgumentOutOfRangeException(nameof(status), status, null)
+        };
     }
 }
